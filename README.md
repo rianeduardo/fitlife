@@ -14,6 +14,7 @@ O Fit Life é um app mobile simples para registrar, acompanhar e analisar ativid
   * título
   * duração em minutos
   * dificuldade (Fácil, Média, Difícil)
+* Atividades iniciais pré-carregadas: Caminhada, Corrida e Alongamento.
 * Listas separadas de atividades **pendentes** e **concluídas**.
 * Marcar tarefas como concluídas e removê-las.
 * Dashboard com métricas em colunas:
@@ -52,7 +53,7 @@ O app segue uma organização simples em camadas:
 * O estado atual é mantido em memória. O app **não persiste dados** entre reinícios.
 * Não existe sistema de login ou autenticação.
 * Não há integração com banco de dados externo ou API.
-* Não há reset de fábrica automático no app atualmente.
+* O app carrega automaticamente atividades iniciais padrão.
 
 ## Como executar
 
@@ -97,7 +98,7 @@ A interface usa Material 3 e uma paleta de azul/roxo ciano, com foco em leitura 
 
 ### 5.2 Aba 2: Catálogo de Exercícios
 O núcleo funcional da aplicação.
-**Massa de dados inicial exigida:**
+**Massa de dados inicial já carregada:**
 * Caminhada (Fácil, 30 min)
 * Corrida (Média, 25 min)
 * Alongamento (Fácil, 15 min)
@@ -108,7 +109,7 @@ O núcleo funcional da aplicação.
 Um agregador de resultados focado na leitura rápida de progresso diário/semanal.
 
 ### 5.4 Aba 4: Ajustes (Configurações)
-Painel técnico minimalista com apenas duas ações vitais: trocar o nome de exibição e formatar os dados do app.
+Painel técnico minimalista com apenas duas ações vitais: trocar o nome de exibição e alternar o tema.
 
 ---
 
@@ -147,7 +148,6 @@ classDiagram
         +marcarComoFeito()
         +removerExercicio()
         +atualizarApelido()
-        +restaurarPadroes()
         +obterResumoMetricas()
     }
 

@@ -6,7 +6,27 @@ import 'package:flutter/material.dart';
 class ControladorAtividades extends ChangeNotifier {
   String? _nomeUsuario;
   bool _modoEscuro = false;
-  final List<Atividade> _atividades = [];
+  final List<Atividade> _atividades = _atividadesPadrao();
+
+  static List<Atividade> _atividadesPadrao() {
+    return [
+      Atividade(
+        titulo: 'Caminhada',
+        duracaoMinutos: 30,
+        dificuldade: DificuldadeAtividade.facil,
+      ),
+      Atividade(
+        titulo: 'Corrida',
+        duracaoMinutos: 25,
+        dificuldade: DificuldadeAtividade.media,
+      ),
+      Atividade(
+        titulo: 'Alongamento',
+        duracaoMinutos: 15,
+        dificuldade: DificuldadeAtividade.facil,
+      ),
+    ];
+  }
 
   String get nomeUsuario => _nomeUsuario ?? '';
   bool get modoEscuro => _modoEscuro;
