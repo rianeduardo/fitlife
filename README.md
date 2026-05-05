@@ -1,5 +1,7 @@
 # Documentação de Especificações de Requisitos de Software (SRS)
 
+**[ [ LINK DO PROTÓTIPO DO FIGMA ] ](https://www.figma.com/design/Wocd4ljL9eAXLQFSHH0OT8/Prot%C3%B3tipo?node-id=0-1&t=EjvqXxoe5d8PE1W0-1)**
+
 ## Sistema de Gestão de Atividades Físicas (Fit Life)
 
 **Padrão Internacional:** ISO/IEC/IEEE 29148:2018
